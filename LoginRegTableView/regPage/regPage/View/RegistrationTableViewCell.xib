@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RegistrationTableViewCell" rowHeight="131" id="KGk-i7-Jjw" customClass="RegistrationTableViewCell" customModule="regPage" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xk6-MI-EaG">
+                        <rect key="frame" x="25" y="65.5" width="91" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="91" id="9Mg-Lj-0Lm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" red="0.94117647059999998" green="0.8980392157" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U1X-jS-3U1">
+                        <rect key="frame" x="121" y="48.5" width="265" height="34"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.8980392157" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" red="0.29411764709999999" green="0.39607843139999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="Xk6-MI-EaG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="Cm5-ln-8QY"/>
+                    <constraint firstItem="U1X-jS-3U1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Fbp-fI-fT5"/>
+                    <constraint firstAttribute="trailing" secondItem="U1X-jS-3U1" secondAttribute="trailing" constant="5" id="IjG-z3-iZV"/>
+                    <constraint firstItem="U1X-jS-3U1" firstAttribute="leading" secondItem="Xk6-MI-EaG" secondAttribute="trailing" constant="5" id="jhL-I7-2ct"/>
+                    <constraint firstItem="Xk6-MI-EaG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oAc-JD-Oxe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="regCellLabel" destination="Xk6-MI-EaG" id="moo-eZ-NRQ"/>
+                <outlet property="regCellTextField" destination="U1X-jS-3U1" id="evw-C1-Xig"/>
+            </connections>
+            <point key="canvasLocation" x="208" y="-75"/>
+        </tableViewCell>
+    </objects>
+</document>
